@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random Space</title>
+  <style>
+    body {
+      background: #101014;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    h1 { font-size: 48px; }
+    p { color: #aaa; }
+    button {
+      background: #b8ff65;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>WELCOME TO NOWHERE.</h1>
+    <p>Just a random corner of the internet.</p>
+    <button onclick="changeText()">Click me</button>
+  </main>
+  <script>
+    function changeText() {
+      document.querySelector("h1").innerText =
+        "YOU FOUND ME!";
+    }
+  </script>
+</body>
+</html>
